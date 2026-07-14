@@ -306,10 +306,9 @@ src/
 
 ## 📚 Documentación Adicional
 
-- [PROYECTO.md](./PROYECTO.md) - Descripción ejecutiva detallada
-- [MEJORAS_FUTURAS.md](./MEJORAS_FUTURAS.md) - Limitaciones y mejoras enterprise
-- [CLAUDE.md](./CLAUDE.md) - Instrucciones para desarrollo asistido por IA
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - Decisiones técnicas y arquitectura
 - [firestore.rules](./firestore.rules) - Reglas de seguridad Firestore
+- [LICENSE](./LICENSE) - Licencia MIT del proyecto
 
 ---
 
@@ -332,10 +331,10 @@ Este proyecto es de código abierto bajo la licencia MIT.
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**
-- LinkedIn: [tu-perfil](https://linkedin.com/in/tu-perfil)
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- Email: tu@email.com
+**Jorge Jeferson Araucano Bonifaz**
+- LinkedIn: [jorge-jeferson-araucano](https://www.linkedin.com/in/jorge-jeferson-araucano/)
+- GitHub: [@jorgearaucano06](https://github.com/jorgearaucano06)
+- Email: jorgearaucano06@gmail.com
 
 ---
 

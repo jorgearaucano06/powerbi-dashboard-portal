@@ -199,4 +199,4 @@ For architectural discussions or significant changes, please open an issue first
 ---
 
 **Last Updated**: 2024
-**Maintained by**: [Your Name]
+**Maintained by**: Jorge Jeferson Araucano Bonifaz
