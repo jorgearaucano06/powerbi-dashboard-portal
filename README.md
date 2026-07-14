@@ -8,7 +8,7 @@
 
 > **Portal empresarial centralizado para gestión de dashboards Power BI con control de acceso basado en roles (RBAC)**
 
-[📖 Documentación](#-documentación-adicional) | [🚀 Instalación](#-instalación-rápida) | [🛠️ Stack Tecnológico](#%EF%B8%8F-stack-tecnológico)
+[📸 Capturas](#-capturas-de-pantalla) | [🚀 Instalación](#-instalación-rápida) | [📖 Documentación](#-documentación-adicional)
 
 ---
 
@@ -90,6 +90,34 @@ ESLint 9            → Linter de código
 TypeScript Compiler → Verificación de tipos
 Git                 → Control de versiones
 ```
+
+---
+
+## 📸 Capturas de Pantalla
+
+### Login
+![Login](./screenshots/login.png)
+*Pantalla de autenticación con diseño glassmorphism y gradientes modernos*
+
+### Dashboard Principal
+![Dashboard](./screenshots/dashboard.png)
+*Vista principal con sidebar de navegación y carga de dashboards Power BI*
+
+### Creación de Usuarios
+![User Creation](./screenshots/user-creation.png)
+*Formulario de creación de usuarios con asignación de roles (Admin/Usuario)*
+
+### Gestión de Usuarios
+![Users Management](./screenshots/users.png)
+*Panel administrativo con tabla de usuarios, búsqueda y controles de edición*
+
+### Gestión de Dashboards
+![Dashboards Management](./screenshots/dashboards.png)
+*Interfaz de administración de dashboards Power BI con cards personalizables*
+
+### Control de Permisos
+![Permissions](./screenshots/permissions.png)
+*Matriz de permisos granulares usuario × dashboard con asignación en tiempo real*
 
 ---
 
