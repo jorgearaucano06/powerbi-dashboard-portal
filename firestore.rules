@@ -1,0 +1,61 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Función helper para verificar si el usuario está autenticado
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Función helper para verificar si el usuario es admin
+    function isAdmin() {
+      return isAuthenticated() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Función helper para verificar si el usuario es el dueño del documento
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Reglas para la colección de usuarios
+    match /users/{userId} {
+      // Permitir lectura si:
+      // - Es admin
+      // - Es el propio usuario
+      allow read: if isAuthenticated() && (isAdmin() || isOwner(userId));
+
+      // Permitir creación solo si es admin
+      allow create: if isAdmin();
+
+      // Permitir actualización si:
+      // - Es admin
+      // - Es el propio usuario (pero no puede cambiar su rol)
+      allow update: if isAdmin() ||
+                       (isOwner(userId) &&
+                        request.resource.data.role == resource.data.role);
+
+      // Permitir eliminación solo si es admin
+      allow delete: if isAdmin();
+    }
+
+    // Reglas para la colección de dashboards
+    match /dashboards/{dashboardId} {
+      // Permitir lectura si:
+      // - Es admin
+      // - El usuario tiene permiso en el array permissions
+      allow read: if isAuthenticated() &&
+                     (isAdmin() ||
+                      request.auth.uid in resource.data.permissions);
+
+      // Permitir escritura solo si es admin
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Bloquear todo lo demás por defecto
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

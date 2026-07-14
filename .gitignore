@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# =====================================================
+# ARCHIVOS DE AYUDA PERSONAL (NO SUBIR A GITHUB)
+# =====================================================
+
+# Documentación de ayuda/tutorial (mantener local)
+GUIA_*.md
+EJECUTA_*.md
+PROMPT_*.md
+VERIFICACION_*.md
+PREVIEW_*.md
+TEXTO_PARA_CV.md
+README_ORIGINAL_BACKUP.md
+LIMPIEZA_*.md
+LISTO_*.md
+
+# Archivos de instrucciones que revelan uso de IA
+CLAUDE.md
+screenshots/README.md
+
+# Archivos de documentación que fueron reemplazados
+PROYECTO.md
+MEJORAS_FUTURAS.md
+
+# Backups
+*.backup.md
+*_BACKUP.md
