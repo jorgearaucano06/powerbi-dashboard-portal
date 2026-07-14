@@ -8,7 +8,7 @@
 
 > **Portal empresarial centralizado para gestión de dashboards Power BI con control de acceso basado en roles (RBAC)**
 
-[🎥 Demo en Vivo](#capturas-de-pantalla) | [📖 Documentación](#documentación) | [🚀 Instalación](#instalación-rápida)
+[📖 Documentación](#-documentación-adicional) | [🚀 Instalación](#-instalación-rápida) | [🛠️ Stack Tecnológico](#%EF%B8%8F-stack-tecnológico)
 
 ---
 
@@ -93,32 +93,6 @@ Git                 → Control de versiones
 
 ---
 
-## 📸 Capturas de Pantalla
-
-> 📁 Ver carpeta `/screenshots` para imágenes completas
-
-### Login Screen
-![Login](./screenshots/login.png)
-*Pantalla de login con efecto glassmorphism y gradientes modernos*
-
-### Dashboard Principal
-![Dashboard](./screenshots/dashboard.png)
-*Vista principal con sidebar colapsable y navegación*
-
-### Gestión de Usuarios
-![Users](./screenshots/users.png)
-*Panel de administración de usuarios con tabla y búsqueda*
-
-### Gestión de Dashboards
-![Dashboards](./screenshots/dashboards.png)
-*Cards de dashboards Power BI con iconos personalizables*
-
-### Control de Permisos
-![Permissions](./screenshots/permissions.png)
-*Matriz de permisos granulares usuario × dashboard*
-
----
-
 ## 🚀 Instalación Rápida
 
 ### Prerrequisitos
@@ -128,7 +102,7 @@ Git                 → Control de versiones
 
 ### Paso 1: Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/jota-apex-admin.git
+git clone https://github.com/jorgearaucano06/jota-apex-admin.git
 cd jota-apex-admin
 ```
 
@@ -287,7 +261,7 @@ src/
 ## ⚠️ Limitaciones Conocidas y Roadmap
 
 ### Limitaciones Actuales
-> Ver archivo `MEJORAS_FUTURAS.md` para detalles completos
+> Ver archivo `ARCHITECTURE.md` para detalles completos sobre decisiones técnicas y escalabilidad
 
 1. **Modelado de permisos**: Uso de arrays en vez de subcolecciones (limitación para > 1000 usuarios)
 2. **Autenticación**: Firebase en lugar de Azure AD (ideal para integración SSO con Power BI)
